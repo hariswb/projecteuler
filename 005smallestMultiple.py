@@ -27,7 +27,7 @@ def smallestMultiple(n):
         for x in primes:
             #print(primes, factors, [x, factors.count(x)])
             primePowers.append([x, factors.count(x)])
-        print("{} {}".format(primes, factors))
+        #print("{} {}".format(primes, factors))
     primePowers.sort(key= lambda tup: tup[0])
     #print(primePowers)
     for i in range(2,n+1):
@@ -41,3 +41,5 @@ def smallestMultiple(n):
     return result        
 
 smallestMultiple(10)
+smallestMultiple(20)
+smallestMultiple(1000)
