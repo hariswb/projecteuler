@@ -43,7 +43,7 @@ for m in range(vertical_len):
                 if product > largest:
                     largest = product
         except IndexError:
-            product = None
+            pass
         
 print(largest)
             
